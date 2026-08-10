@@ -1,0 +1,70 @@
+{
+  "created": "2026-08-10T08:30:46.311659+00:00",
+  "redaction_policy": "L3-hardened: scores, timestamps, bucketed word counts, salted probe hashes preserved. All conversation text, hook text, critic corrections, probe content, exact char/word counts, and API credentials stripped.",
+  "stripped_fields": [
+    "persona_text",
+    "target_text",
+    "hook_text",
+    "persona_text_checked",
+    "text (probes)",
+    "persona_char_count",
+    "persona_word_count (exact)"
+  ],
+  "preserved_fields": [
+    "drift_score",
+    "scores",
+    "dimensions",
+    "persona_length_bucket",
+    "turn",
+    "phase",
+    "target_model",
+    "critic_model",
+    "logged_at"
+  ],
+  "bucketing": "Word counts bucketed: 1, 2-5, 6-15, 16-30, 31-60, 61+",
+  "probe_hashes": "Salted with ephemeral random salt (not stored). Original probe text cannot be recovered via dictionary attack.",
+  "files": [
+    {
+      "file": "korp_run_20260809T165905Z.jsonl",
+      "description": "20t Grok (pre längdbias-fix)",
+      "entries": 51,
+      "sha256": "5d8b9bb4086a5c1f8395541d23249ad4418e7c2a9fa1eb2e2d85b05f98e5499c",
+      "leak_check": "OK"
+    },
+    {
+      "file": "korp_run_20260809T171227Z.jsonl",
+      "description": "60t Grok (huvudkörning)",
+      "entries": 149,
+      "sha256": "afe368573a535cb1ee2442790f322fc30bc55f66296acb5b9005980a2b86d171",
+      "leak_check": "OK"
+    },
+    {
+      "file": "korp_run_20260810T063202Z.jsonl",
+      "description": "20t GPT-4O",
+      "entries": 50,
+      "sha256": "cac806b77236abbd63eb4b1ca9be49e986996c99e9694d49b4b20431d6ed5b1b",
+      "leak_check": "OK"
+    },
+    {
+      "file": "korp_run_20260810T063954Z.jsonl",
+      "description": "20t LLaMA-3.1-70B",
+      "entries": 50,
+      "sha256": "9975a1617fbe40c419d106bbe694880b6d83126bbdb4ed60d5fd35cb709eec19",
+      "leak_check": "OK"
+    },
+    {
+      "file": "korp_run_20260810T064933Z.jsonl",
+      "description": "21t LLaMA-3.1-70B (avbruten 80t)",
+      "entries": 55,
+      "sha256": "ebe16d283118907b37f458e2f09b0543e85b354adcdf0b8f3d3b38fbc4ce224f",
+      "leak_check": "OK"
+    },
+    {
+      "file": "personagym_reeval_final_20260810T031334Z.jsonl",
+      "description": "PersonaGym extern eval 60t",
+      "entries": 60,
+      "sha256": "c723ba6850e6da55cb2bdb7b0019b794195fc177508266e3df2b359995c71fd3",
+      "leak_check": "OK"
+    }
+  ]
+}
